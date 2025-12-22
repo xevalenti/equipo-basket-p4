@@ -3,6 +3,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Image, Text, View, StyleSheet } from 'react-native';
 import { useEffect } from 'react'; 
 import messaging from '@react-native-firebase/messaging';
+import "./firebase/config";
+
 
 import Home from './components/Home';
 import Inicio from './components/Inicio';

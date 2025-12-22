@@ -1,58 +1,74 @@
-[debug] [2025-12-22T21:45:07.779Z] ----------------------------------------------------------------------
-[debug] [2025-12-22T21:45:07.781Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\carme\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
-[debug] [2025-12-22T21:45:07.782Z] CLI Version:   15.1.0
-[debug] [2025-12-22T21:45:07.782Z] Platform:      win32
-[debug] [2025-12-22T21:45:07.782Z] Node Version:  v22.20.0
-[debug] [2025-12-22T21:45:07.782Z] Time:          Mon Dec 22 2025 22:45:07 GMT+0100 (hora estándar de Europa central)
-[debug] [2025-12-22T21:45:07.782Z] ----------------------------------------------------------------------
+[debug] [2025-12-22T22:11:06.418Z] ----------------------------------------------------------------------
+[debug] [2025-12-22T22:11:06.419Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\carme\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2025-12-22T22:11:06.419Z] CLI Version:   15.1.0
+[debug] [2025-12-22T22:11:06.420Z] Platform:      win32
+[debug] [2025-12-22T22:11:06.420Z] Node Version:  v22.20.0
+[debug] [2025-12-22T22:11:06.420Z] Time:          Mon Dec 22 2025 23:11:06 GMT+0100 (hora estándar de Europa central)
+[debug] [2025-12-22T22:11:06.420Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2025-12-22T21:45:08.608Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2025-12-22T21:45:08.608Z] > authorizing via signed-in user (czunigam@uoc.edu)
-[debug] [2025-12-22T21:45:08.678Z] java version "21.0.8" 2025-07-15 LTS
+[debug] [2025-12-22T22:11:07.232Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-12-22T22:11:07.233Z] > authorizing via signed-in user (czunigam@uoc.edu)
+[debug] [2025-12-22T22:11:07.306Z] java version "21.0.8" 2025-07-15 LTS
 
-[debug] [2025-12-22T21:45:08.679Z] Java(TM) SE Runtime Environment (build 21.0.8+12-LTS-250)
+[debug] [2025-12-22T22:11:07.306Z] Java(TM) SE Runtime Environment (build 21.0.8+12-LTS-250)
 Java HotSpot(TM) 64-Bit Server VM (build 21.0.8+12-LTS-250, mixed mode, sharing)
 
-[debug] [2025-12-22T21:45:08.693Z] Parsed Java major version: 21
+[debug] [2025-12-22T22:11:07.348Z] Parsed Java major version: 21
 [info] i  emulators: Starting emulators: functions, database, extensions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, database, extensions"}}
-[debug] [2025-12-22T21:45:08.695Z] Checked if tokens are valid: true, expires at: 1766443303445
-[debug] [2025-12-22T21:45:08.695Z] Checked if tokens are valid: true, expires at: 1766443303445
-[debug] [2025-12-22T21:45:08.696Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/equipo-basket-p4 [none]
-[debug] [2025-12-22T21:45:08.936Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/equipo-basket-p4 200
-[debug] [2025-12-22T21:45:08.936Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/equipo-basket-p4 {"projectNumber":"637478469272","projectId":"equipo-basket-p4","lifecycleState":"ACTIVE","name":"equipo-basket-p4","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-12-17T12:40:01.226743Z"}
-[debug] [2025-12-22T21:45:08.944Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-12-22T21:45:08.944Z] [database] Database Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-12-22T21:45:08.944Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"database":[{"address":"127.0.0.1","family":"IPv4","port":9000}]},"metadata":{"message":"assigned listening specs for emulators"}}
-[debug] [2025-12-22T21:45:08.946Z] Emulator locator file path: C:\Users\carme\AppData\Local\Temp\hub-equipo-basket-p4.json
-[debug] [2025-12-22T21:45:08.946Z] [hub] writing locator at C:\Users\carme\AppData\Local\Temp\hub-equipo-basket-p4.json
-[debug] [2025-12-22T21:45:08.951Z] [Extensions] Started Extensions emulator, this is a noop.
-[debug] [2025-12-22T21:45:08.954Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-12-22T21:45:08.954Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-12-22T21:45:08.954Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-12-22T21:45:08.955Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"database":[{"address":"127.0.0.1","family":"IPv4","port":9000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[debug] [2025-12-22T22:11:07.349Z] Checked if tokens are valid: true, expires at: 1766443303445
+[debug] [2025-12-22T22:11:07.349Z] Checked if tokens are valid: true, expires at: 1766443303445
+[debug] [2025-12-22T22:11:07.350Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/equipo-basket-p4 [none]
+[debug] [2025-12-22T22:11:08.044Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/equipo-basket-p4 200
+[debug] [2025-12-22T22:11:08.045Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/equipo-basket-p4 {"projectNumber":"637478469272","projectId":"equipo-basket-p4","lifecycleState":"ACTIVE","name":"equipo-basket-p4","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-12-17T12:40:01.226743Z"}
+[debug] [2025-12-22T22:11:08.053Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-12-22T22:11:08.053Z] [database] Database Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-12-22T22:11:08.053Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"database":[{"address":"127.0.0.1","family":"IPv4","port":9000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-12-22T22:11:08.056Z] Emulator locator file path: C:\Users\carme\AppData\Local\Temp\hub-equipo-basket-p4.json
+[debug] [2025-12-22T22:11:08.056Z] [hub] writing locator at C:\Users\carme\AppData\Local\Temp\hub-equipo-basket-p4.json
+[debug] [2025-12-22T22:11:08.062Z] [Extensions] Started Extensions emulator, this is a noop.
+[debug] [2025-12-22T22:11:08.066Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-12-22T22:11:08.066Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-12-22T22:11:08.066Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-12-22T22:11:08.066Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"database":[{"address":"127.0.0.1","family":"IPv4","port":9000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
 [warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, auth, firestore, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, auth, firestore, hosting, pubsub, storage, dataconnect\u001b[22m"}}
-[debug] [2025-12-22T21:45:08.963Z] defaultcredentials: writing to file C:\Users\carme\AppData\Roaming\firebase\czunigam_uoc_edu_application_default_credentials.json
-[debug] [2025-12-22T21:45:08.964Z] Setting GAC to C:\Users\carme\AppData\Roaming\firebase\czunigam_uoc_edu_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\carme\\AppData\\Roaming\\firebase\\czunigam_uoc_edu_application_default_credentials.json"}}
-[debug] [2025-12-22T21:45:08.964Z] Checked if tokens are valid: true, expires at: 1766443303445
-[debug] [2025-12-22T21:45:08.964Z] Checked if tokens are valid: true, expires at: 1766443303445
-[debug] [2025-12-22T21:45:08.964Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/equipo-basket-p4/adminSdkConfig [none]
-[debug] [2025-12-22T21:45:09.250Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/equipo-basket-p4/adminSdkConfig 200
-[debug] [2025-12-22T21:45:09.250Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/equipo-basket-p4/adminSdkConfig {"projectId":"equipo-basket-p4","databaseURL":"https://equipo-basket-p4-default-rtdb.europe-west1.firebasedatabase.app","storageBucket":"equipo-basket-p4.firebasestorage.app"}
-[debug] [2025-12-22T21:45:09.259Z] Checked if tokens are valid: true, expires at: 1766443303445
-[debug] [2025-12-22T21:45:09.259Z] Checked if tokens are valid: true, expires at: 1766443303445
-[debug] [2025-12-22T21:45:09.259Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/equipo-basket-p4 [none]
-[debug] [2025-12-22T21:45:09.527Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/equipo-basket-p4 200
-[debug] [2025-12-22T21:45:09.527Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/equipo-basket-p4 {"projectId":"equipo-basket-p4","projectNumber":"637478469272","displayName":"equipo-basket-p4","name":"projects/equipo-basket-p4","resources":{"hostingSite":"equipo-basket-p4","realtimeDatabaseInstance":"equipo-basket-p4-default-rtdb"},"state":"ACTIVE","etag":"1_9356de73-3867-44e2-9650-693e6207df8c"}
-[debug] [2025-12-22T21:45:09.527Z] database rules config:  [{"instance":"equipo-basket-p4-default-rtdb","rules":"C:\\Users\\carme\\Desktop\\Github Equipo-basket4\\equipo-basket-p4\\database.rules.json"}]
-[debug] [2025-12-22T21:45:09.529Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
-[debug] [2025-12-22T21:45:09.529Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2025-12-22T21:45:09.529Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
-[debug] [2025-12-22T21:45:09.529Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","C:\\Users\\carme\\.cache\\firebase\\emulators\\firebase-database-emulator-v4.11.2.jar","--host","127.0.0.1","--port",9000,"--single_project_mode","Warning","--functions_emulator_host","127.0.0.1","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host","single_project_mode"],"joinArgs":false,"shell":false,"port":9000} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\carme\\\\.cache\\\\firebase\\\\emulators\\\\firebase-database-emulator-v4.11.2.jar\",\"--host\",\"127.0.0.1\",\"--port\",9000,\"--single_project_mode\",\"Warning\",\"--functions_emulator_host\",\"127.0.0.1\",\"--functions_emulator_port\",5001],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":9000}"}}
+[debug] [2025-12-22T22:11:08.077Z] defaultcredentials: writing to file C:\Users\carme\AppData\Roaming\firebase\czunigam_uoc_edu_application_default_credentials.json
+[debug] [2025-12-22T22:11:08.078Z] Setting GAC to C:\Users\carme\AppData\Roaming\firebase\czunigam_uoc_edu_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\carme\\AppData\\Roaming\\firebase\\czunigam_uoc_edu_application_default_credentials.json"}}
+[debug] [2025-12-22T22:11:08.079Z] Checked if tokens are valid: true, expires at: 1766443303445
+[debug] [2025-12-22T22:11:08.079Z] Checked if tokens are valid: true, expires at: 1766443303445
+[debug] [2025-12-22T22:11:08.079Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/equipo-basket-p4/adminSdkConfig [none]
+[debug] [2025-12-22T22:11:08.382Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/equipo-basket-p4/adminSdkConfig 200
+[debug] [2025-12-22T22:11:08.382Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/equipo-basket-p4/adminSdkConfig {"projectId":"equipo-basket-p4","databaseURL":"https://equipo-basket-p4-default-rtdb.europe-west1.firebasedatabase.app","storageBucket":"equipo-basket-p4.firebasestorage.app"}
+[debug] [2025-12-22T22:11:08.392Z] Checked if tokens are valid: true, expires at: 1766443303445
+[debug] [2025-12-22T22:11:08.392Z] Checked if tokens are valid: true, expires at: 1766443303445
+[debug] [2025-12-22T22:11:08.392Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/equipo-basket-p4 [none]
+[debug] [2025-12-22T22:11:08.625Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/equipo-basket-p4 200
+[debug] [2025-12-22T22:11:08.625Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/equipo-basket-p4 {"projectId":"equipo-basket-p4","projectNumber":"637478469272","displayName":"equipo-basket-p4","name":"projects/equipo-basket-p4","resources":{"hostingSite":"equipo-basket-p4","realtimeDatabaseInstance":"equipo-basket-p4-default-rtdb"},"state":"ACTIVE","etag":"1_9356de73-3867-44e2-9650-693e6207df8c"}
+[debug] [2025-12-22T22:11:08.625Z] database rules config:  [{"instance":"equipo-basket-p4-default-rtdb","rules":"C:\\equipo-basket-p4\\database.rules.json"}]
+[debug] [2025-12-22T22:11:08.627Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2025-12-22T22:11:08.627Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-12-22T22:11:08.628Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2025-12-22T22:11:08.628Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","C:\\Users\\carme\\.cache\\firebase\\emulators\\firebase-database-emulator-v4.11.2.jar","--host","127.0.0.1","--port",9000,"--single_project_mode","Warning","--functions_emulator_host","127.0.0.1","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host","single_project_mode"],"joinArgs":false,"shell":false,"port":9000} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\carme\\\\.cache\\\\firebase\\\\emulators\\\\firebase-database-emulator-v4.11.2.jar\",\"--host\",\"127.0.0.1\",\"--port\",9000,\"--single_project_mode\",\"Warning\",\"--functions_emulator_host\",\"127.0.0.1\",\"--functions_emulator_port\",5001],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":9000}"}}
 [info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
-[debug] [2025-12-22T21:45:11.182Z] [Extensions] Connecting Extensions emulator, this is a noop.
-[info] i  functions: Watching "C:\Users\carme\Desktop\Github Equipo-basket4\equipo-basket-p4\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\carme\\Desktop\\Github Equipo-basket4\\equipo-basket-p4\\functions\" for Cloud Functions..."}}
-[debug] [2025-12-22T21:45:11.187Z] Validating nodejs source
-[debug] [2025-12-22T21:45:11.769Z] > [functions] package.json contents: {
+[debug] [2025-12-22T22:11:09.870Z] [Extensions] Connecting Extensions emulator, this is a noop.
+[info] i  functions: Watching "C:\equipo-basket-p4\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\equipo-basket-p4\\functions\" for Cloud Functions..."}}
+[debug] [2025-12-22T22:11:09.874Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2025-12-22T22:11:09.875Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\carme\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\carme\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\carme\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\carme\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\prepare.js
+- C:\Users\carme\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\carme\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\carme\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\carme\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\emulators-start.js
+- C:\Users\carme\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\carme\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\carme\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\cli.js
+- C:\Users\carme\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\carme\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\carme\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\carme\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\carme\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\prepare.js","C:\\Users\\carme\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\carme\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\carme\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\carme\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\emulators-start.js","C:\\Users\\carme\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\carme\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\carme\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\bin\\cli.js","C:\\Users\\carme\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2025-12-22T22:11:09.875Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2025-12-22T22:11:09.876Z] > [functions] package.json contents: {
   "name": "functions",
   "scripts": {
     "lint": "eslint --ext .js,.ts .",
@@ -83,35 +99,14 @@ Java HotSpot(TM) 64-Bit Server VM (build 21.0.8+12-LTS-250, mixed mode, sharing)
   },
   "private": true
 }
-[debug] [2025-12-22T21:45:11.769Z] Building nodejs source
-[debug] [2025-12-22T21:45:11.770Z] Failed to find version of module node: reached end of search path C:\Users\carme\Desktop\Github Equipo-basket4\equipo-basket-p4\functions\node_modules
-[warn] !  functions: Your requested "node" version "24" doesn't match your global version "22". Using node@22 from host. 
-[debug] [2025-12-22T21:45:11.771Z] Could not find functions.yaml. Must use http discovery
-[debug] [2025-12-22T21:45:11.777Z] Found firebase-functions binary at 'C:\Users\carme\Desktop\Github Equipo-basket4\equipo-basket-p4\functions\node_modules\.bin\firebase-functions'
-[info] Serving at port 8485
+[error] !!  functions: Failed to load function definition from source: FirebaseError: There was an error reading functions\package.json:
 
-[debug] [2025-12-22T21:45:12.481Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"},"notifyOnWrite":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"eventTrigger":{"eventType":"providers/google.firebase.database/eventTypes/ref.write","eventFilters":{"resource":"projects/_/instances/equipo-basket-p4-default-rtdb/refs/messages/{messageId}"},"retry":false},"labels":{},"entryPoint":"notifyOnWrite"},"notifyOnUpdate":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"eventTrigger":{"eventType":"providers/google.firebase.database/eventTypes/ref.update","eventFilters":{"resource":"projects/_/instances/equipo-basket-p4-default-rtdb/refs/messages/{messageId}"},"retry":false},"labels":{},"entryPoint":"notifyOnUpdate"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
-[debug] [2025-12-22T21:45:16.512Z] defaultcredentials: writing to file C:\Users\carme\AppData\Roaming\firebase\czunigam_uoc_edu_application_default_credentials.json
-[debug] [2025-12-22T21:45:16.513Z] Setting GAC to C:\Users\carme\AppData\Roaming\firebase\czunigam_uoc_edu_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\carme\\AppData\\Roaming\\firebase\\czunigam_uoc_edu_application_default_credentials.json"}}
-[info] +  functions: Loaded functions definitions from source: helloWorld, notifyOnWrite, notifyOnUpdate. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld, notifyOnWrite, notifyOnUpdate."}}
-[info] +  functions[us-central1-helloWorld]: http function initialized (http://127.0.0.1:5001/equipo-basket-p4/us-central1/helloWorld). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/equipo-basket-p4/us-central1/helloWorld)."}}
-[debug] [2025-12-22T21:45:16.515Z] addRealtimeDatabaseTrigger[equipo-basket-p4-default-rtdb] "{\"name\":\"projects/equipo-basket-p4/locations/_/functions/us-central1-notifyOnWrite-0\",\"path\":\"/messages/{messageId}\",\"event\":\"providers/google.firebase.database/eventTypes/ref.write\",\"topic\":\"projects/equipo-basket-p4/topics/us-central1-notifyOnWrite-0\"}"
-[debug] [2025-12-22T21:45:16.516Z] >>> [apiv2][query] POST http://127.0.0.1:9000/.settings/functionTriggers.json?ns=equipo-basket-p4-default-rtdb [none]
-[debug] [2025-12-22T21:45:16.516Z] >>> [apiv2][body] POST http://127.0.0.1:9000/.settings/functionTriggers.json?ns=equipo-basket-p4-default-rtdb "{\"name\":\"projects/equipo-basket-p4/locations/_/functions/us-central1-notifyOnWrite-0\",\"path\":\"/messages/{messageId}\",\"event\":\"providers/google.firebase.database/eventTypes/ref.write\",\"topic\":\"projects/equipo-basket-p4/topics/us-central1-notifyOnWrite-0\"}"
-[debug] [2025-12-22T21:45:16.825Z] <<< [apiv2][status] POST http://127.0.0.1:9000/.settings/functionTriggers.json?ns=equipo-basket-p4-default-rtdb 200
-[debug] [2025-12-22T21:45:16.825Z] <<< [apiv2][body] POST http://127.0.0.1:9000/.settings/functionTriggers.json?ns=equipo-basket-p4-default-rtdb {"status":"ok"}
-[info] +  functions[us-central1-notifyOnWrite]: database function initialized. {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mdatabase\u001b[22m function initialized."}}
-[debug] [2025-12-22T21:45:16.826Z] addRealtimeDatabaseTrigger[equipo-basket-p4-default-rtdb] "{\"name\":\"projects/equipo-basket-p4/locations/_/functions/us-central1-notifyOnUpdate-0\",\"path\":\"/messages/{messageId}\",\"event\":\"providers/google.firebase.database/eventTypes/ref.update\",\"topic\":\"projects/equipo-basket-p4/topics/us-central1-notifyOnUpdate-0\"}"
-[debug] [2025-12-22T21:45:16.826Z] >>> [apiv2][query] POST http://127.0.0.1:9000/.settings/functionTriggers.json?ns=equipo-basket-p4-default-rtdb [none]
-[debug] [2025-12-22T21:45:16.826Z] >>> [apiv2][body] POST http://127.0.0.1:9000/.settings/functionTriggers.json?ns=equipo-basket-p4-default-rtdb "{\"name\":\"projects/equipo-basket-p4/locations/_/functions/us-central1-notifyOnUpdate-0\",\"path\":\"/messages/{messageId}\",\"event\":\"providers/google.firebase.database/eventTypes/ref.update\",\"topic\":\"projects/equipo-basket-p4/topics/us-central1-notifyOnUpdate-0\"}"
-[debug] [2025-12-22T21:45:16.831Z] <<< [apiv2][status] POST http://127.0.0.1:9000/.settings/functionTriggers.json?ns=equipo-basket-p4-default-rtdb 200
-[debug] [2025-12-22T21:45:16.831Z] <<< [apiv2][body] POST http://127.0.0.1:9000/.settings/functionTriggers.json?ns=equipo-basket-p4-default-rtdb {"status":"ok"}
-[info] +  functions[us-central1-notifyOnUpdate]: database function initialized. {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mdatabase\u001b[22m function initialized."}}
-[debug] [2025-12-22T21:45:16.832Z] >>> [apiv2][query] PUT http://127.0.0.1:9000/.settings/rules.json ns=equipo-basket-p4-default-rtdb
-[debug] [2025-12-22T21:45:16.832Z] >>> [apiv2][body] PUT http://127.0.0.1:9000/.settings/rules.json "{\r\n  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */\r\n  \"rules\": {\r\n    \".read\": false,\r\n    \".write\": false\r\n  }\r\n}"
-[debug] [2025-12-22T21:45:16.846Z] <<< [apiv2][status] PUT http://127.0.0.1:9000/.settings/rules.json 200
-[debug] [2025-12-22T21:45:16.846Z] <<< [apiv2][body] PUT http://127.0.0.1:9000/.settings/rules.json {"status":"ok"}
-[debug] [2025-12-22T21:45:16.849Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+ functions\lib\index.js does not exist, can't deploy Cloud Functions {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: There was an error reading functions\\package.json:\n\n functions\\lib\\index.js does not exist, can't deploy Cloud Functions"}}
+[debug] [2025-12-22T22:11:09.877Z] >>> [apiv2][query] PUT http://127.0.0.1:9000/.settings/rules.json ns=equipo-basket-p4-default-rtdb
+[debug] [2025-12-22T22:11:09.877Z] >>> [apiv2][body] PUT http://127.0.0.1:9000/.settings/rules.json "{\r\n  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */\r\n  \"rules\": {\r\n    \".read\": false,\r\n    \".write\": false\r\n  }\r\n}"
+[debug] [2025-12-22T22:11:10.130Z] <<< [apiv2][status] PUT http://127.0.0.1:9000/.settings/rules.json 200
+[debug] [2025-12-22T22:11:10.130Z] <<< [apiv2][body] PUT http://127.0.0.1:9000/.settings/rules.json {"status":"ok"}
+[debug] [2025-12-22T22:11:10.132Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
 [info] 
 ┌─────────────────────────────────────────────────────────────┐
 │ ✔  All emulators ready! It is now safe to connect your app. │
@@ -134,20 +129,55 @@ Java HotSpot(TM) 64-Bit Server VM (build 21.0.8+12-LTS-250, mixed mode, sharing)
 └─────────────────────────┴───────────────┴─────────────────────┘
 Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
  
-[debug] [2025-12-22T22:00:04.365Z] Received signal SIGHUP 1
-[info]  
-[info] i  emulators: Received SIGHUP for the first time. Starting a clean shutdown. 
-[info] i  emulators: Please wait for a clean shutdown or send the SIGHUP signal again to stop right now. 
-[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
-[info] i  ui: Stopping Emulator UI {"metadata":{"emulator":{"name":"ui"},"message":"Stopping Emulator UI"}}
-[info] i  extensions: Stopping Extensions Emulator {"metadata":{"emulator":{"name":"extensions"},"message":"Stopping Extensions Emulator"}}
-[debug] [2025-12-22T22:00:04.368Z] [Extensions] Stopping Extensions emulator, this is a noop.
-[info] i  functions: Stopping Functions Emulator {"metadata":{"emulator":{"name":"functions"},"message":"Stopping Functions Emulator"}}
-[info] i  database: Stopping Database Emulator {"metadata":{"emulator":{"name":"database"},"message":"Stopping Database Emulator"}}
-[warn] !  Database Emulator has exited upon receiving signal: SIGINT 
-[info] i  eventarc: Stopping Eventarc Emulator {"metadata":{"emulator":{"name":"eventarc"},"message":"Stopping Eventarc Emulator"}}
-[info] i  tasks: Stopping Cloud Tasks Emulator {"metadata":{"emulator":{"name":"tasks"},"message":"Stopping Cloud Tasks Emulator"}}
-[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
-[debug] [2025-12-22T22:00:04.376Z] Emulator locator file path: C:\Users\carme\AppData\Local\Temp\hub-equipo-basket-p4.json
-[info] i  logging: Stopping Logging Emulator {"metadata":{"emulator":{"name":"logging"},"message":"Stopping Logging Emulator"}}
-[debug] [2025-12-22T22:00:04.380Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[debug] [2025-12-22T22:23:18.285Z] File C:\equipo-basket-p4\functions\package-lock.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\equipo-basket-p4\\functions\\package-lock.json changed, reloading triggers"}}
+[debug] [2025-12-22T22:23:19.301Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2025-12-22T22:23:19.302Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\carme\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\carme\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\carme\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\carme\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\prepare.js
+- C:\Users\carme\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\carme\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\carme\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\carme\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\emulators-start.js
+- C:\Users\carme\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\carme\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\carme\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\cli.js
+- C:\Users\carme\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\carme\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\carme\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\carme\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\carme\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\prepare.js","C:\\Users\\carme\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\carme\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\carme\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\carme\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\emulators-start.js","C:\\Users\\carme\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\carme\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\carme\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\bin\\cli.js","C:\\Users\\carme\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2025-12-22T22:23:19.302Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2025-12-22T22:23:19.303Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "24"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^13.6.0",
+    "firebase-functions": "^7.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.4.1",
+    "typescript": "5.1"
+  },
+  "private": true
+}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: There was an error reading functions\package.json:
+
+ functions\lib\index.js does not exist, can't deploy Cloud Functions {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: There was an error reading functions\\package.json:\n\n functions\\lib\\index.js does not exist, can't deploy Cloud Functions"}}
