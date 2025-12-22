@@ -1,0 +1,11 @@
+19:16:54.838 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+19:16:54.998 [main] INFO com.firebase.server.forge.App$ - Listening at 127.0.0.1:9000
+19:17:01.058 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO com.firebase.core.namespace.NamespaceActor - equipo-basket-p4-default-rtdb successfully activated FBKV (SurveyIdle(0)) wait: 115ms, init: 0ms
+19:17:01.104 [NamespaceSystem-blocking-namespace-operation-dispatcher-6] INFO com.firebase.core.namespace.StateManager - Namespace equipo-basket-p4-default-rtdb status Active to Active
+19:17:01.124 [NamespaceSystem-blocking-namespace-operation-dispatcher-6] INFO com.firebase.core.namespace.StateManager - Namespace equipo-basket-p4-default-rtdb status Active to Active
+19:17:01.133 [NamespaceSystem-blocking-namespace-operation-dispatcher-6] INFO com.firebase.core.namespace.StateManager - Namespace equipo-basket-p4-default-rtdb status Active to Active
+19:17:23.828 [FirebaseWorkerPool-1-3] WARN com.firebase.core.persistence.backend.dummy.EmulatorMetadataPersistence - Multiple projectIds are not recommended in single project mode. Requested 
+namespace equipo-basket-p4, but the emulator is configured for equipo-basket-p4-default-rtdb. To 
+opt-out of single project mode add/set the singleProjectMode: false property in 
+the firebase.json emulators config. 
+19:17:23.838 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO com.firebase.core.namespace.NamespaceActor - equipo-basket-p4 successfully activated FBKV (SurveyIdle(0)) wait: 4ms, init: 0ms

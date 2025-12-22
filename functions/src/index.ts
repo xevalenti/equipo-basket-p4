@@ -1,10 +1,8 @@
 ﻿// HTTP v2
 import { onRequest } from 'firebase-functions/v2/https';
 
-// Database v1 (IMPORTANTE)
+//  v1 (IMPORTANTE)
 import * as functions from 'firebase-functions/v1';
-
-// Tipos v1
 import { Change, EventContext } from 'firebase-functions/v1';
 
 // Admin + logger
@@ -21,9 +19,8 @@ export const helloWorld = onRequest((req, res) => {
     res.send('Hello from Firebase!');
 });
 
-/**
- * Trigger onWrite
- */
+//Trigger onWrite
+ 
 export const notifyOnWrite = functions.database
     .ref('/messages/{messageId}')
     .onWrite(
@@ -48,9 +45,8 @@ export const notifyOnWrite = functions.database
         }
     );
 
-/**
- * Trigger onUpdate
- */
+//Trigger onUpdate
+ 
 export const notifyOnUpdate = functions.database
     .ref('/messages/{messageId}')
     .onUpdate(
@@ -66,7 +62,7 @@ export const notifyOnUpdate = functions.database
             const message = {
                 notification: {
                     title: 'Mensaje actualizado',
-                    body: `Antes: ${before?.text} → Ahora: ${after?.text}`,
+                    body: `Antes: ${before?.text} | Ahora: ${after?.text}`,
                 },
                 topic: 'allUsers',
             };
