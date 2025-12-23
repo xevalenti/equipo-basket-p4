@@ -1,14 +1,14 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyDrh_oNIWORCQJ9lwdUqxaiQEqeNOIpfpY",
-    authDomain: "equipo-basket-p4.firebaseapp.com",
-    databaseURL: "https://equipo-basket-p4-default-rtdb.europe-west1.firebasedatabase.app",
-    projectId: "equipo-basket-p4",
-    storageBucket: "equipo-basket-p4.firebasestorage.app",
+    apiKey: "AIzaSyBUUF5jhHNx2TON-UsgyZ0LyssrWHC2gaw",
+    authDomain: "equipo-basket-p2.firebaseapp.com",
+    databaseURL: "https://equipo-basket-p2-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "equipo-basket-p2",
+    storageBucket: "equipo-basket-p2.firebasestorage.app",
     messagingSenderId: "637478469272",
-    appId: "1:637478469272:web:7115e5773458e944a4daed",
-    measurementId: "G-JDMMWTEF6L"
+    appId: "1:474074122785:web:a3440b09aa77b492a2f160",
+    measurementId: "G-0T52MVSGHZ"
   },
-  vapidKey: "BLkvjIg_OcyWxr8xxVcp3Mu2piK6cIG-GNmFTgD6xNANx0oiaVUM4IElS00zIxYgpIxy8Boy9wagBQ4i7N6dW04"
+  vapidKey: "BDBcKIwuAW3sfUC0LreJ62JhsYjbO_TwuNq2_5GogoiufQaNG2cxjJ9-Hh8U2fx58McbuY4y--p9qdjT8Uhk_pY"
 };

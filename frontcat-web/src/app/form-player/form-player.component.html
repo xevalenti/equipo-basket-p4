@@ -1,0 +1,38 @@
+<div class="scroll-container">
+  <div class="inner">
+    <h2>{{ isEditMode ? 'Editar Jugador' : 'Crear Jugador' }}</h2>
+
+    <input type="number" [(ngModel)]="player.alias" placeholder="Número (Alias)">
+    <input type="text" [(ngModel)]="player.name" placeholder="Nombre">
+    <input type="text" [(ngModel)]="player.lastName" placeholder="Apellido">
+    <input type="text" [(ngModel)]="player.position" placeholder="Posición">
+    <input type="number" [(ngModel)]="player.age" placeholder="Edad">
+    <input type="text" [(ngModel)]="player.height" placeholder="Altura">
+    <input type="text" [(ngModel)]="player.weight" placeholder="Peso">
+    <input type="text" [(ngModel)]="player.teams" placeholder="Equipo">
+    <input type="text" [(ngModel)]="player.initials" placeholder="Iniciales">
+
+    <div class="file-section">
+      <label class="btn-select">
+        {{ selectedImagePreview ? 'Cambiar Foto' : 'Seleccionar Foto' }}
+        <input type="file" (change)="onFileSelected($event)" accept="image/*" hidden>
+      </label>
+      <img *ngIf="selectedImagePreview" [src]="selectedImagePreview" class="preview">
+    </div>
+
+    <select [(ngModel)]="player.video" class="input-select">
+      <option value="">Seleccionar Video Local</option>
+      <option *ngFor="let v of localVideos" [value]="v">{{ v }}</option>
+    </select>
+
+    <div class="actions">
+      <button class="btn-save" (click)="savePlayer()" [disabled]="saving">
+        {{ saving ? 'Guardando...' : (isEditMode ? 'Actualizar' : 'Crear') }}
+      </button>
+
+      <button *ngIf="isEditMode" class="btn-delete" (click)="deletePlayer()" [disabled]="saving">
+        Eliminar Jugador
+      </button>
+    </div>
+  </div>
+</div>
