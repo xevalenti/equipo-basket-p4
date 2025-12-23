@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="header">
+    <button class="btn-back" (click)="irAInicio()">← Volver</button>
+    <h1>Videos Destacados</h1>
+  </div>
+
+  <div class="video-grid">
+    <div class="video-card" *ngFor="let video of videos" (click)="verVideo(video.fileName)">
+      <div class="thumbnail-wrapper">
+        <img [src]="video.thumb" class="thumbnail" alt="Thumbnail">
+        <div class="play-overlay">
+          <span class="play-icon">▶</span>
+        </div>
+      </div>
+      <div class="video-info">
+        <p class="video-title">{{ video.title }}</p>
+        <p class="video-filename">{{ video.fileName }}</p>
+      </div>
+    </div>
+  </div>
+</div>

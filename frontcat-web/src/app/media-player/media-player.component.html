@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="header">
+    <button class="btn-inicio" (click)="irAInicio()">← Inicio</button>
+    <h2>Reproductor</h2>
+  </div>
+
+  <div *ngIf="finalSrc; else noVideo" class="video-wrapper">
+    <video
+      #videoPlayer
+      [src]="finalSrc"
+      class="video-element"
+      controls
+      playsinline>
+      Tu navegador no soporta videos.
+    </video>
+
+    <div class="controls">
+      <button class="control-button" (click)="playVideo()">▶ Play</button>
+      <button class="control-button" (click)="pauseVideo()">⏸ Pause</button>
+      <button class="control-button" (click)="stopVideo()">⏹ Stop</button>
+    </div>
+  </div>
+
+  <ng-template #noVideo>
+    <div class="no-video">
+      <p>No hay video disponible</p>
+    </div>
+  </ng-template>
+</div>

@@ -1,65 +1,46 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { Firestore, collection, query, orderBy, limit, onSnapshot, startAfter, getDocs, collectionData } from '@angular/fire/firestore';
+import { Router } from '@angular/router';
+import { Firestore, collection, collectionData } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-inicio',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule],
   templateUrl: './inicio.component.html',
   styleUrls: ['./inicio.component.scss']
 })
 export class InicioComponent implements OnInit {
-  players: any[] = [];
-  loading: boolean = true;
-  lastDoc: any = null;
-  isFetchingMore: boolean = false;
-  searchText: string = '';
-  filterBy: string = 'nombre';
+  players$: Observable<any[]> | undefined;
 
-  constructor(private firestore: Firestore) {}
+  constructor(private firestore: Firestore, private router: Router) {}
 
   ngOnInit() {
-    // Equivalente al useEffect de React
-    const playersCol = collection(this.firestore, 'players');
-    const q = query(playersCol, orderBy('name'), limit(10));
+    // 1. Referencia a la colección 'players' en tu nuevo proyecto p2
+    const playersCollection = collection(this.firestore, 'players');
 
-    onSnapshot(q, (snapshot) => {
-      this.players = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-      this.lastDoc = snapshot.docs[snapshot.docs.length - 1];
-      this.loading = false;
-    });
+    // 2. Traer los datos con el ID incluido (importante para editar/eliminar)
+    this.players$ = collectionData(playersCollection, { idField: 'id' });
   }
 
-  async fetchMore() {
-    if (!this.lastDoc || this.isFetchingMore) return;
-    this.isFetchingMore = true;
-
-    const playersCol = collection(this.firestore, 'players');
-    const q = query(playersCol, orderBy('name'), startAfter(this.lastDoc), limit(10));
-
-    const snapshot = await getDocs(q);
-    if (!snapshot.empty) {
-      const newData = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-      this.players = [...this.players, ...newData];
-      this.lastDoc = snapshot.docs[snapshot.docs.length - 1];
-    }
-    this.isFetchingMore = false;
+  // Navegar a la ficha de detalles
+  verDetalles(player: any) {
+    this.router.navigate(['/player-detail'], { state: { player } });
   }
 
-  get filteredPlayers() {
-    return this.players.filter(p => {
-      const t = this.searchText.toLowerCase();
-      if (!t) return true;
-      if (this.filterBy === 'nombre') return `${p.name} ${p.lastName}`.toLowerCase().includes(t);
-      if (this.filterBy === 'posicion') return (p.position || '').toLowerCase().includes(t);
-      if (this.filterBy === 'edad') return String(p.age || '').includes(t);
-      return true;
-    });
+  // Navegar al formulario para EDITAR
+  editarJugador(event: Event, player: any) {
+    event.stopPropagation(); // Evita que se dispare verDetalles al hacer clic en el botón
+    this.router.navigate(['/form-player'], { state: { player } });
   }
 
-  setFilter(filter: string) {
-    this.filterBy = filter;
+  // Navegar al formulario para CREAR NUEVO
+  nuevoJugador() {
+    this.router.navigate(['/form-player']);
+  }
+
+  irAVideos() {
+    this.router.navigate(['/videos']);
   }
 }

@@ -1,39 +1,25 @@
 <div class="container">
-  <div class="search-row">
-    <input
-      type="text"
-      class="input"
-      placeholder="Buscar jugador..."
-      [(ngModel)]="searchText"
-    >
-    <button [class.filter-active]="filterBy === 'nombre'" (click)="setFilter('nombre')">Nombre</button>
-    <button [class.filter-active]="filterBy === 'posicion'" (click)="setFilter('posicion')">Posición</button>
-    <button [class.filter-active]="filterBy === 'edad'" (click)="setFilter('edad')">Edad</button>
-  </div>
-
-  <div *ngIf="loading" class="loader">
-    <div class="spinner"></div>
-    <p>Cargando jugadores...</p>
-  </div>
-
-  <div class="list" *ngIf="!loading">
-    <div class="card" *ngFor="let item of filteredPlayers">
-      <div class="item-content">
-        <img src="assets/logo.png" class="player-logo">
-
-        <img [src]="item.headshot || 'assets/logo.png'" class="player-photo">
-
-        <div class="text-container">
-          <span class="player-name">{{item.name}} {{item.lastName}}</span>
-          <span class="player-info">{{item.position}} - {{item.age}} años</span>
-
-          <button class="edit-inline">✎ Editar</button>
-        </div>
-      </div>
+  <div class="header">
+    <h1>Equipo Basket P2</h1>
+    <div class="actions">
+      <button class="btn-nav" (click)="irAVideos()">📺 Ver Videos</button>
+      <button class="btn-add" (click)="nuevoJugador()">+ Nuevo Jugador</button>
     </div>
+  </div>
 
-    <button *ngIf="lastDoc" (click)="fetchMore()" class="load-more">
-      {{ isFetchingMore ? 'Cargando...' : 'Cargar más' }}
-    </button>
+  <div class="list">
+    <div class="player-card" *ngFor="let player of players$ | async" (click)="verDetalles(player)">
+      <div class="avatar">
+        <img *ngIf="player.headshotBase64" [src]="'data:image/jpeg;base64,' + player.headshotBase64" alt="Photo">
+        <div *ngIf="!player.headshotBase64" class="no-photo">{{ player.initials }}</div>
+      </div>
+
+      <div class="info">
+        <p class="name">{{ player.name }} {{ player.lastName }}</p>
+        <p class="meta">#{{ player.alias }} | {{ player.position }}</p>
+      </div>
+
+      <button class="btn-edit" (click)="editarJugador($event, player)">✏️</button>
+    </div>
   </div>
 </div>

@@ -12,9 +12,9 @@ import { Router } from '@angular/router'; // <--- El sustituto de useNavigation
 export class HomeComponent {
 
   constructor(private router: Router) {}
-
-  // Funciones para navegar
+  
   navegar(ruta: string) {
-    this.router.navigate([ruta]);
+    console.log("Intentando navegar a:", ruta);
+    this.router.navigate(['/' + ruta]);
   }
 }
