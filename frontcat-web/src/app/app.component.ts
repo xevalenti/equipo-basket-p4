@@ -1,9 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { MessagingService } from './messaging.service';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
     selector: 'app-root',
-    template: `<h1>Mi App Angular con Firebase Messaging</h1>`
+    standalone: true,
+    imports: [RouterOutlet],
+     templateUrl: './app.component.html',
+      styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
     constructor(private messagingService: MessagingService) { }
