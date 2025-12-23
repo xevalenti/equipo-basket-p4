@@ -15,7 +15,18 @@ export class InicioComponent implements OnInit {
   players$: Observable<any[]> | undefined;
 
   constructor(private firestore: Firestore, private router: Router) {}
-
+getAvatar(player: any): string | null {
+  // 1. Si hay base64, lo priorizamos
+  if (player.headshotBase64) {
+    return 'data:image/jpeg;base64,' + player.headshotBase64;
+  }
+  // 2. Si no hay base64 pero hay una URL en headshot
+  if (player.headshot && player.headshot.startsWith('http')) {
+    return player.headshot;
+  }
+  // 3. Si no hay nada, devolvemos null para que salga el div de iniciales
+  return null;
+}
   ngOnInit() {
     // 1. Referencia a la colección 'players' en tu nuevo proyecto p2
     const playersCollection = collection(this.firestore, 'players');
