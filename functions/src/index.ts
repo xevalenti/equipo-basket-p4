@@ -1,73 +1,42 @@
-﻿// HTTP v2
-import { onRequest } from 'firebase-functions/v2/https';
-
-//  v1 (IMPORTANTE)
-import * as functions from 'firebase-functions/v1';
-import { Change, EventContext } from 'firebase-functions/v1';
-
-// Admin + logger
-import * as admin from 'firebase-admin';
-import * as logger from 'firebase-functions/logger';
+import * as functions from "firebase-functions";
+import * as admin from "firebase-admin";
 
 admin.initializeApp();
 
-/**
- * HTTP function
- */
-export const helloWorld = onRequest((req, res) => {
-    logger.info('Function triggered');
-    res.send('Hello from Firebase!');
-});
+interface Player {
+  name: string;
+  lastName: string;
+  teams: string;
+}
 
-//Trigger onWrite
- 
-export const notifyOnWrite = functions.database
-    .ref('/messages/{messageId}')
-    .onWrite(
-        async (
-            change: Change<functions.database.DataSnapshot>,
-            context: EventContext
-        ) => {
-            const data = change.after.val();
+export const notifyPlayerCreated = functions.firestore
+  .document("players/{playerId}")
+  .onCreate(async (snap, context) => {
+    const player = snap.data() as Player;
+    if (!player) return;
 
-            if (!data) return;
+    const payload: admin.messaging.MessagingPayload = {
+      notification: {
+        title: "Nuevo jugador agregado",
+        body: `${player.name} ${player.lastName} se ha agregado al equipo ${player.teams}`,
+      },
+    };
 
-            const message = {
-                notification: {
-                    title: 'Nuevo mensaje',
-                    body: data.text ?? 'Cambio en la base de datos',
-                },
-                topic: 'allUsers',
-            };
+    await admin.messaging().sendToTopic("general", payload);
+  });
 
-            await admin.messaging().send(message);
-            logger.info('Notificación enviada (onWrite)');
-        }
-    );
+export const notifyPlayerUpdated = functions.firestore
+  .document("players/{playerId}")
+  .onUpdate(async (change, context) => {
+    const player = change.after.data() as Player;
+    if (!player) return;
 
-//Trigger onUpdate
- 
-export const notifyOnUpdate = functions.database
-    .ref('/messages/{messageId}')
-    .onUpdate(
-        async (
-            change: Change<functions.database.DataSnapshot>,
-            context: EventContext
-        ) => {
-            const before = change.before.val();
-            const after = change.after.val();
+    const payload: admin.messaging.MessagingPayload = {
+      notification: {
+        title: "Jugador actualizado",
+        body: `${player.name} ${player.lastName} fue actualizado`,
+      },
+    };
 
-            if (before?.text === after?.text) return;
-
-            const message = {
-                notification: {
-                    title: 'Mensaje actualizado',
-                    body: `Antes: ${before?.text} | Ahora: ${after?.text}`,
-                },
-                topic: 'allUsers',
-            };
-
-            await admin.messaging().send(message);
-            logger.info('Notificación enviada (onUpdate)');
-        }
-    );
+    await admin.messaging().sendToTopic("general", payload);
+  });

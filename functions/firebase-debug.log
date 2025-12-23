@@ -1,0 +1,181 @@
+[debug] [2025-12-23T17:30:40.313Z] ----------------------------------------------------------------------
+[debug] [2025-12-23T17:30:40.315Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Miriam\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2025-12-23T17:30:40.316Z] CLI Version:   15.1.0
+[debug] [2025-12-23T17:30:40.316Z] Platform:      win32
+[debug] [2025-12-23T17:30:40.316Z] Node Version:  v22.20.0
+[debug] [2025-12-23T17:30:40.316Z] Time:          Tue Dec 23 2025 18:30:40 GMT+0100 (hora estándar de Europa central)
+[debug] [2025-12-23T17:30:40.316Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-12-23T17:30:41.206Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-12-23T17:30:41.206Z] > authorizing via signed-in user (mduranre@uoc.edu)
+[debug] [2025-12-23T17:30:41.267Z] openjdk version "21.0.8" 2025-07-15 LTS
+
+[debug] [2025-12-23T17:30:41.267Z] OpenJDK Runtime Environment Temurin-21.0.8+9 (build 21.0.8+9-LTS)
+OpenJDK 64-Bit Server VM Temurin-21.0.8+9 (build 21.0.8+9-LTS, mixed mode, sharing)
+
+[debug] [2025-12-23T17:30:41.288Z] Parsed Java major version: 21
+[info] i  emulators: Starting emulators: functions, firestore, database, extensions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, firestore, database, extensions"}}
+[debug] [2025-12-23T17:30:41.291Z] Checked if tokens are valid: true, expires at: 1766514575239
+[debug] [2025-12-23T17:30:41.291Z] Checked if tokens are valid: true, expires at: 1766514575239
+[debug] [2025-12-23T17:30:41.292Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/equipo-basket-p4 [none]
+[debug] [2025-12-23T17:30:41.990Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/equipo-basket-p4 200
+[debug] [2025-12-23T17:30:41.990Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/equipo-basket-p4 {"projectNumber":"637478469272","projectId":"equipo-basket-p4","lifecycleState":"ACTIVE","name":"equipo-basket-p4","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-12-17T12:40:01.226743Z"}
+[debug] [2025-12-23T17:30:42.001Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-12-23T17:30:42.001Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-12-23T17:30:42.001Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-12-23T17:30:42.001Z] [database] Database Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-12-23T17:30:42.001Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"database":[{"address":"127.0.0.1","family":"IPv4","port":9000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-12-23T17:30:42.007Z] Emulator locator file path: C:\Users\Miriam\AppData\Local\Temp\hub-equipo-basket-p4.json
+[debug] [2025-12-23T17:30:42.007Z] [hub] writing locator at C:\Users\Miriam\AppData\Local\Temp\hub-equipo-basket-p4.json
+[debug] [2025-12-23T17:30:42.013Z] [Extensions] Started Extensions emulator, this is a noop.
+[debug] [2025-12-23T17:30:42.017Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-12-23T17:30:42.017Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-12-23T17:30:42.017Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-12-23T17:30:42.017Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"database":[{"address":"127.0.0.1","family":"IPv4","port":9000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, auth, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, auth, hosting, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2025-12-23T17:30:42.030Z] defaultcredentials: writing to file C:\Users\Miriam\AppData\Roaming\firebase\mduranre_uoc_edu_application_default_credentials.json
+[debug] [2025-12-23T17:30:42.032Z] Setting GAC to C:\Users\Miriam\AppData\Roaming\firebase\mduranre_uoc_edu_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Miriam\\AppData\\Roaming\\firebase\\mduranre_uoc_edu_application_default_credentials.json"}}
+[debug] [2025-12-23T17:30:42.032Z] Checked if tokens are valid: true, expires at: 1766514575239
+[debug] [2025-12-23T17:30:42.033Z] Checked if tokens are valid: true, expires at: 1766514575239
+[debug] [2025-12-23T17:30:42.033Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/equipo-basket-p4/adminSdkConfig [none]
+[debug] [2025-12-23T17:30:42.394Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/equipo-basket-p4/adminSdkConfig 200
+[debug] [2025-12-23T17:30:42.395Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/equipo-basket-p4/adminSdkConfig {"projectId":"equipo-basket-p4","databaseURL":"https://equipo-basket-p4-default-rtdb.europe-west1.firebasedatabase.app","storageBucket":"equipo-basket-p4.firebasestorage.app"}
+[warn] !  firestore: Cloud Firestore Emulator does not support multiple databases yet. {"metadata":{"emulator":{"name":"firestore"},"message":"Cloud Firestore Emulator does not support multiple databases yet."}}
+[warn] !  firestore: Did not find a Cloud Firestore rules file specified in a firebase.json config file. {"metadata":{"emulator":{"name":"firestore"},"message":"Did not find a Cloud Firestore rules file specified in a firebase.json config file."}}
+[warn] !  firestore: The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration. {"metadata":{"emulator":{"name":"firestore"},"message":"The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration."}}
+[debug] [2025-12-23T17:30:42.513Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-12-23T17:30:42.513Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2025-12-23T17:30:42.515Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\Miriam\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.20.2.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","equipo-basket-p4","--single_project_mode",true,"--functions_emulator","127.0.0.1:5001"],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false,"shell":false,"port":8080} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\Miriam\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.20.2.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"equipo-basket-p4\",\"--single_project_mode\",true,\"--functions_emulator\",\"127.0.0.1:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":8080}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2025-12-23T17:30:44.142Z] Dec 23, 2025 6:30:44 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:9150
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Dec 23, 2025 6:30:44 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\r\nINFO: Started WebSocket server on ws://127.0.0.1:9150\r\n"}}
+[debug] [2025-12-23T17:30:44.192Z] API endpoint: http://127.0.0.1:8080 {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://127.0.0.1:8080"}}
+[debug] [2025-12-23T17:30:44.193Z] 
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
+
+If you are running a Firestore in Datastore Mode project, run:
+
+   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080
+
+Note: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\r\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080\n\nIf you are running a Firestore in Datastore Mode project, run:\r\n\n   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080\n\nNote: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.\r\nDev App Server is now running.\n\r\n"}}
+[info] +  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[debug] [2025-12-23T17:30:44.369Z] Checked if tokens are valid: true, expires at: 1766514575239
+[debug] [2025-12-23T17:30:44.369Z] Checked if tokens are valid: true, expires at: 1766514575239
+[debug] [2025-12-23T17:30:44.369Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/equipo-basket-p4 [none]
+[debug] [2025-12-23T17:30:44.608Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/equipo-basket-p4 200
+[debug] [2025-12-23T17:30:44.608Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/equipo-basket-p4 {"projectId":"equipo-basket-p4","projectNumber":"637478469272","displayName":"equipo-basket-p4","name":"projects/equipo-basket-p4","resources":{"hostingSite":"equipo-basket-p4","realtimeDatabaseInstance":"equipo-basket-p4-default-rtdb"},"state":"ACTIVE","etag":"1_d4a44513-2b21-4b1b-8215-c0813f5dfffe"}
+[debug] [2025-12-23T17:30:44.609Z] database rules config:  [{"instance":"equipo-basket-p4-default-rtdb","rules":"C:\\Users\\Miriam\\Desktop\\UOC\\Quinta semestre\\67\\P-4\\equipo-basket-p4\\database.rules.json"}]
+[debug] [2025-12-23T17:30:44.611Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2025-12-23T17:30:44.611Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-12-23T17:30:44.611Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2025-12-23T17:30:44.611Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","C:\\Users\\Miriam\\.cache\\firebase\\emulators\\firebase-database-emulator-v4.11.2.jar","--host","127.0.0.1","--port",9000,"--single_project_mode","Warning","--functions_emulator_host","127.0.0.1","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host","single_project_mode"],"joinArgs":false,"shell":false,"port":9000} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\Miriam\\\\.cache\\\\firebase\\\\emulators\\\\firebase-database-emulator-v4.11.2.jar\",\"--host\",\"127.0.0.1\",\"--port\",9000,\"--single_project_mode\",\"Warning\",\"--functions_emulator_host\",\"127.0.0.1\",\"--functions_emulator_port\",5001],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":9000}"}}
+[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
+[debug] [2025-12-23T17:30:45.515Z] 18:30:45.514 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+ {"metadata":{"emulator":{"name":"database"},"message":"18:30:45.514 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started\r\n"}}
+[debug] [2025-12-23T17:30:45.678Z] 18:30:45.678 [main] INFO com.firebase.server.forge.App$ - Listening at 127.0.0.1:9000
+ {"metadata":{"emulator":{"name":"database"},"message":"18:30:45.678 [main] INFO com.firebase.server.forge.App$ - Listening at 127.0.0.1:9000\r\n"}}
+[debug] [2025-12-23T17:30:45.843Z] [Extensions] Connecting Extensions emulator, this is a noop.
+[info] i  functions: Watching "C:\Users\Miriam\Desktop\UOC\Quinta semestre\67\P-4\equipo-basket-p4\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\Miriam\\Desktop\\UOC\\Quinta semestre\\67\\P-4\\equipo-basket-p4\\functions\" for Cloud Functions..."}}
+[debug] [2025-12-23T17:30:45.849Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2025-12-23T17:30:46.436Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "24"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^11.6.0",
+    "firebase-functions": "^3.24.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.4.1",
+    "typescript": "^5.7.3"
+  },
+  "private": true
+}
+[debug] [2025-12-23T17:30:46.436Z] Building nodejs source
+[debug] [2025-12-23T17:30:46.437Z] Failed to find version of module node: reached end of search path C:\Users\Miriam\Desktop\UOC\Quinta semestre\67\P-4\equipo-basket-p4\functions\node_modules
+[warn] !  functions: Your requested "node" version "24" doesn't match your global version "22". Using node@22 from host. 
+[info] i  functions: You are using a version of firebase-functions SDK (3.24.1) that does not have support for the newest Firebase Extensions features. Please update firebase-functions SDK to >=5.1.0 to use them correctly 
+[debug] [2025-12-23T17:30:46.438Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-12-23T17:30:46.443Z] Found firebase-functions binary at 'C:\Users\Miriam\Desktop\UOC\Quinta semestre\67\P-4\equipo-basket-p4\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8824
+
+[debug] [2025-12-23T17:30:46.702Z] Got response from /__/functions.yaml {"endpoints":{"notifyPlayerCreated":{"platform":"gcfv1","eventTrigger":{"eventType":"providers/cloud.firestore/eventTypes/document.create","eventFilters":{"resource":"projects/equipo-basket-p4/databases/(default)/documents/players/{playerId}"},"retry":false},"labels":{},"entryPoint":"notifyPlayerCreated"},"notifyPlayerUpdated":{"platform":"gcfv1","eventTrigger":{"eventType":"providers/cloud.firestore/eventTypes/document.update","eventFilters":{"resource":"projects/equipo-basket-p4/databases/(default)/documents/players/{playerId}"},"retry":false},"labels":{},"entryPoint":"notifyPlayerUpdated"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: notifyPlayerCreated, notifyPlayerUpdated. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: notifyPlayerCreated, notifyPlayerUpdated."}}
+[debug] [2025-12-23T17:30:50.739Z] addFirestoreTrigger "{\"eventTrigger\":{\"eventType\":\"providers/cloud.firestore/eventTypes/document.create\",\"resource\":\"projects/equipo-basket-p4/databases/(default)/documents/players/{playerId}\",\"service\":\"firestore.googleapis.com\"}}"
+[debug] [2025-12-23T17:30:50.740Z] >>> [apiv2][query] PUT http://127.0.0.1:8080/emulator/v1/projects/equipo-basket-p4/triggers/us-central1-notifyPlayerCreated-0 [none]
+[debug] [2025-12-23T17:30:50.740Z] >>> [apiv2][body] PUT http://127.0.0.1:8080/emulator/v1/projects/equipo-basket-p4/triggers/us-central1-notifyPlayerCreated-0 "{\"eventTrigger\":{\"eventType\":\"providers/cloud.firestore/eventTypes/document.create\",\"resource\":\"projects/equipo-basket-p4/databases/(default)/documents/players/{playerId}\",\"service\":\"firestore.googleapis.com\"}}"
+[debug] [2025-12-23T17:30:50.744Z] Dec 23, 2025 6:30:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Dec 23, 2025 6:30:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2025-12-23T17:30:50.842Z] Dec 23, 2025 6:30:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Dec 23, 2025 6:30:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected HTTP/2 connection.\r\n"}}
+[debug] [2025-12-23T17:30:51.243Z] <<< [apiv2][status] PUT http://127.0.0.1:8080/emulator/v1/projects/equipo-basket-p4/triggers/us-central1-notifyPlayerCreated-0 200
+[debug] [2025-12-23T17:30:51.243Z] <<< [apiv2][body] PUT http://127.0.0.1:8080/emulator/v1/projects/equipo-basket-p4/triggers/us-central1-notifyPlayerCreated-0 {}
+[info] +  functions[us-central1-notifyPlayerCreated]: firestore function initialized. {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mfirestore\u001b[22m function initialized."}}
+[debug] [2025-12-23T17:30:51.244Z] addFirestoreTrigger "{\"eventTrigger\":{\"eventType\":\"providers/cloud.firestore/eventTypes/document.update\",\"resource\":\"projects/equipo-basket-p4/databases/(default)/documents/players/{playerId}\",\"service\":\"firestore.googleapis.com\"}}"
+[debug] [2025-12-23T17:30:51.244Z] >>> [apiv2][query] PUT http://127.0.0.1:8080/emulator/v1/projects/equipo-basket-p4/triggers/us-central1-notifyPlayerUpdated-0 [none]
+[debug] [2025-12-23T17:30:51.244Z] >>> [apiv2][body] PUT http://127.0.0.1:8080/emulator/v1/projects/equipo-basket-p4/triggers/us-central1-notifyPlayerUpdated-0 "{\"eventTrigger\":{\"eventType\":\"providers/cloud.firestore/eventTypes/document.update\",\"resource\":\"projects/equipo-basket-p4/databases/(default)/documents/players/{playerId}\",\"service\":\"firestore.googleapis.com\"}}"
+[debug] [2025-12-23T17:30:51.251Z] <<< [apiv2][status] PUT http://127.0.0.1:8080/emulator/v1/projects/equipo-basket-p4/triggers/us-central1-notifyPlayerUpdated-0 200
+[debug] [2025-12-23T17:30:51.251Z] <<< [apiv2][body] PUT http://127.0.0.1:8080/emulator/v1/projects/equipo-basket-p4/triggers/us-central1-notifyPlayerUpdated-0 {}
+[info] +  functions[us-central1-notifyPlayerUpdated]: firestore function initialized. {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mfirestore\u001b[22m function initialized."}}
+[debug] [2025-12-23T17:30:51.252Z] >>> [apiv2][query] PUT http://127.0.0.1:9000/.settings/rules.json ns=equipo-basket-p4-default-rtdb
+[debug] [2025-12-23T17:30:51.252Z] >>> [apiv2][body] PUT http://127.0.0.1:9000/.settings/rules.json "{\n  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */\n  \"rules\": {\n    \".read\": false,\n    \".write\": false\n  }\n}"
+[debug] [2025-12-23T17:30:51.469Z] 18:30:51.468 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO com.firebase.core.namespace.NamespaceActor - equipo-basket-p4-default-rtdb successfully activated FBKV (SurveyIdle(0)) wait: 109ms, init: 0ms
+ {"metadata":{"emulator":{"name":"database"},"message":"18:30:51.468 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO com.firebase.core.namespace.NamespaceActor - equipo-basket-p4-default-rtdb successfully activated FBKV (SurveyIdle(0)) wait: 109ms, init: 0ms\r\n"}}
+[debug] [2025-12-23T17:30:51.534Z] 18:30:51.534 [NamespaceSystem-blocking-namespace-operation-dispatcher-6] INFO com.firebase.core.namespace.StateManager - Namespace equipo-basket-p4-default-rtdb status Active to Active
+ {"metadata":{"emulator":{"name":"database"},"message":"18:30:51.534 [NamespaceSystem-blocking-namespace-operation-dispatcher-6] INFO com.firebase.core.namespace.StateManager - Namespace equipo-basket-p4-default-rtdb status Active to Active\r\n"}}
+[debug] [2025-12-23T17:30:51.552Z] <<< [apiv2][status] PUT http://127.0.0.1:9000/.settings/rules.json 200
+[debug] [2025-12-23T17:30:51.552Z] <<< [apiv2][body] PUT http://127.0.0.1:9000/.settings/rules.json {"status":"ok"}
+[debug] [2025-12-23T17:30:51.555Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────┬────────────────┬──────────────────────────────────┐
+│ Emulator   │ Host:Port      │ View in Emulator UI              │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Functions  │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions  │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Firestore  │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore  │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Database   │ 127.0.0.1:9000 │ http://127.0.0.1:4000/database   │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Extensions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/extensions │
+└────────────┴────────────────┴──────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500, 9150
+┌─────────────────────────┬───────────────┬─────────────────────┐
+│ Extension Instance Name │ Extension Ref │ View in Emulator UI │
+└─────────────────────────┴───────────────┴─────────────────────┘
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
