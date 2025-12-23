@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="grid">
+    <div class="card" *ngFor="let item of equiposNBA" (click)="handlePress(item.logo)">
+      <img [src]="item.logo" class="logo" alt="{{item.name}}">
+      <p class="team-name">{{item.name}}</p>
+    </div>
+  </div>
+
+  <div class="modal-overlay" *ngIf="modalVisible" (click)="closeModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <img *ngIf="selectedLogo" [src]="selectedLogo" class="modal-image">
+    </div>
+  </div>
+</div>

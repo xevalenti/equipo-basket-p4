@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="search-row">
+    <input
+      type="text"
+      class="input"
+      placeholder="Buscar jugador..."
+      [(ngModel)]="searchText"
+    >
+    <button [class.filter-active]="filterBy === 'nombre'" (click)="setFilter('nombre')">Nombre</button>
+    <button [class.filter-active]="filterBy === 'posicion'" (click)="setFilter('posicion')">Posición</button>
+    <button [class.filter-active]="filterBy === 'edad'" (click)="setFilter('edad')">Edad</button>
+  </div>
+
+  <div *ngIf="loading" class="loader">
+    <div class="spinner"></div>
+    <p>Cargando jugadores...</p>
+  </div>
+
+  <div class="list" *ngIf="!loading">
+    <div class="card" *ngFor="let item of filteredPlayers">
+      <div class="item-content">
+        <img src="assets/logo.png" class="player-logo">
+
+        <img [src]="item.headshot || 'assets/logo.png'" class="player-photo">
+
+        <div class="text-container">
+          <span class="player-name">{{item.name}} {{item.lastName}}</span>
+          <span class="player-info">{{item.position}} - {{item.age}} años</span>
+
+          <button class="edit-inline">✎ Editar</button>
+        </div>
+      </div>
+    </div>
+
+    <button *ngIf="lastDoc" (click)="fetchMore()" class="load-more">
+      {{ isFetchingMore ? 'Cargando...' : 'Cargar más' }}
+    </button>
+  </div>
+</div>

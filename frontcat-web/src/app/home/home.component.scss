@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+.banner-container {
+  width: 100%;
+  height: 250px; // Ajustado para web
+  background-color: #ffe2e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #e52b2b;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0 15px;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 1.5;
+  max-width: 600px;
+  padding: 0 30px;
+}
+
+.separator {
+  width: 70%;
+  height: 2px;
+  background-color: #e52b2b;
+  opacity: 0.5;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.menu {
+  width: 100%;
+  max-width: 400px; // Para que no se estire demasiado en PC
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card {
+  width: 100%;
+  background-color: #e52b2b;
+  padding: 18px 0;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+
+  &:active {
+    transform: scale(0.98);
+    background-color: #c42525;
+  }
+}
+
+.card-text {
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}

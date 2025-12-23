@@ -1,0 +1,35 @@
+<div class="container">
+
+  <div class="banner-container">
+    <img src="assets/logo1.png" class="logo" alt="NBA Logo">
+  </div>
+
+  <h1 class="title">Bienvenido a la App FRONTCAT NBA</h1>
+
+  <p class="subtitle">
+    Explora estadísticas y detalles de los jugadores, descubre los equipos de la NBA y disfruta de los mejores vídeos y jugadas destacadas.
+    Todo en un solo lugar, fácil de navegar y con información actualizada.
+  </p>
+
+  <div class="separator"></div>
+
+  <div class="menu">
+
+    <button class="card" (click)="navegar('')">
+      <span class="card-text">📋 Ver jugadores</span>
+    </button>
+
+    <button class="card" (click)="navegar('equipos')">
+      <span class="card-text">🏀 Ver equipos</span>
+    </button>
+
+    <button class="card" (click)="navegar('videos')">
+      <span class="card-text">🎥 Videos destacados</span>
+    </button>
+
+    <button class="card" (click)="navegar('form-player')">
+      <span class="card-text">➕ Añadir jugador</span>
+    </button>
+
+  </div>
+</div>

@@ -1,0 +1,38 @@
+.container { padding: 10px; background: #ccc; min-height: 100vh; font-family: sans-serif; }
+
+.search-row {
+  display: flex; gap: 5px; margin-bottom: 10px;
+  input { flex: 1; padding: 8px; border-radius: 5px; border: 1px solid #999; background: #eee; }
+  button { padding: 6px; border-radius: 5px; border: 1px solid #999; background: #ddd; cursor: pointer; }
+  .filter-active { border-color: #ff3b3b; background: #ff9999; }
+}
+
+.card {
+  background: #eee; border-radius: 5px; margin-bottom: 8px; padding: 14px;
+  border-bottom: 1px solid #999; position: relative; overflow: hidden;
+}
+
+.item-content { display: flex; align-items: center; position: relative; z-index: 2; }
+
+.player-logo {
+  position: absolute; left: 0; width: 60px; height: 60px;
+  opacity: 0.2; z-index: 0; object-fit: cover;
+}
+
+.player-photo {
+  width: 60px; height: 60px; border-radius: 50%;
+  border: 1px solid #999; z-index: 1; object-fit: cover;
+}
+
+.text-container { margin-left: 10px; display: flex; flex-direction: column; }
+.player-name { font-size: 17px; font-weight: 600; color: #333; }
+.player-info { font-size: 14px; color: #555; margin-top: 2px; }
+
+.edit-inline {
+  margin-top: 6px; padding: 6px 10px; border-radius: 6px;
+  border: 1px solid #e52b2b; color: #e52b2b; background: #eee;
+  font-weight: 600; width: fit-content; cursor: pointer;
+}
+
+.loader { display: flex; flex-direction: column; align-items: center; margin-top: 50px; }
+.load-more { width: 100%; padding: 10px; margin-top: 10px; background: #ddd; border: none; border-radius: 5px; }
